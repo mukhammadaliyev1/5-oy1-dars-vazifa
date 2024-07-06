@@ -32,8 +32,6 @@
 // // let y = 10;
 // // console.log(y);
 // bu kodda tepa ishlamaydi pastki qismi ishlaydi
-
-
 // Masalalar
 
 // // 1-masala
@@ -119,67 +117,97 @@
 // console.log((findarrnum(arr)));
 
 // // 5-misol
-
-// let arr=[1,2,3,4,5,6]
-// function newkvadratelement (arr){
-//     let res=[]
-//      arr.foEach(function(value){
-//         return res.push(value);
-//      })
-//     return res.map(function(value){
-//         return value**2
-//     })
+// function transformation(arr){
+//     let res = [];
+//     arr.forEach(function(valeu){
+//         res.push(valeu**2)
+//     });
+//     return res.map(function(valeu){
+//         return valeu
+//     });
 // }
-// console.log(newkvadratelement(arr));
+// console.log(transformation(arr2));
+
+// const res4 = (arr) =>{
+//     let reduce = [];
+//     arr.forEach(function(valeu){
+//         reduce.push(valeu**2)
+//     })
+//     return reduce.map(function(valeu){
+//         return valeu;
+//     });
+// };
+// console.log(res4(arr2));
 
 // 6-misol
-
-// let arr= [ 2000, 2333, 1800, 3300]
-
-// function yangimaow(arr){
-
-//     let res=arr.filter(function(value){
-//  return value>=2000
+// const oylik = [
+//     {name: 'Davlatbek', birinchi: 1950},
+//     {name: 'Abdulla',birinchi: 2656},
+//     {name:'Shohjaxon',birinchi: 456}
+// ];
+// function findHardworker(arr){
+//     let res =  arr.filter(function(valeu){
+//         return valeu.birinchi >= 2000
+//     });
+//     let res1 =  res.reduce(function (valeu){
+//       return birinchi.valeu * 1,1;
 //     })
-//     res=res.map(function(value){
-//         return value/100*10+value
-//     })
-// return res
+    
+//     return res1;
+    
+// };
+// console.log(findHardworker(oylik));
 
-// }
-// console.log(yangimaow(arr));
 
-// 8-misol
+//7-misol
+// const students = [
+//   { name: "vali", ball: 90, age: 18 },
+//   { name: "bekmurod", ball: 88, age: 20 },
+//   { name: "qodirjon", ball: 80, age: 15 },
+// ];
+// function findLastGrow(arr){
+//   let res =  arr.find(function(valeu){
+//     return valeu.ball==80
+//   })
+//   console.log(res);
+//   return arr.filter(function(valeu){
+//     return valeu.ball>80
+//   })
+// };
+// console.log(findLastGrow(students));
 
-// Stringga oid masalalar
+//STRINg ga oid misollar
+
 // 1-misol
-
-// function toUpperCaseStr(str){
-
+// const res = function(str) {
 //     return str.toUpperCase()
-// }
-// console.log(toUpperCaseStr('salom salommmmm nma gap'));
+// };
+// console.log(res('salom dunyo'));
 
-// 2-misol
+//2-misol
+// const res = function (str, element){
+//     return str.includes(element)
+// };
+// console.log(res('salom dunyo', 'yo'));
 
-// function findSubs(str,word){
-// return str.includes(word);
-// }console.log(findSubs('salom qalesan', 'lom'));
+//3-misol
+// const res = function (str, element){
+//     return str.replace(str, element)
+// };
+// console.log(res('JavaScript','JS'));
 
-// 3-misol
-// function replacestr(str){
-//     return str.replace('JAVASCRIPT', 'JS')
-// }
-// console.log(replacestr('JAVASCRIPT', 'JS'));
+//4-misol:
 
-// // 4-misol
-// const str = "salom salom salom ";
-// function reversestr(str) {
-//   let res = str.split(" ");
-//   res=res.reverse();
-// }
-// console.log(reversestr(str));
+// const res = function (str){
+//     let res2 = str.split('');
+//     return res2.reverse().join('');
+// };
+// console.log(res('salom dunyo'));
+
 
 // 5-misol
 
-
+// const treamsUse = function (str){
+//     return str.trim().toUpperCase();
+// };
+// console.log(treamsUse('    salom dunyo    '));
